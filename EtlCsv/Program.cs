@@ -12,8 +12,8 @@ namespace EtlCsv;
 class Program
 {
     // TODO store in configuration files
-    private const string TransportationsFilePath = "../../../sample-cab-data.csv";
-    private const string DuplicatesFilePath = "../../../duplicates.csv";
+    private const string TransportationsFilePath = "sample-cab-data.csv";
+    private const string DuplicatesFilePath = "duplicates.csv";
     private const string ConnectionString = "Server=localhost;Database=TransportationsDB;Trusted_Connection=Yes;Encrypt=false;";
     
     static void Main(string[] args)
