@@ -15,14 +15,14 @@ Test task for DevelopsToday
    ```
 
 # Architecture Overview
-Application is designed with extensibility in mind.\
-To facilitate future enhancements, I created interfaces and abstractions that allow for easy extension. \
+Application is designed with extensibility in mind.
+To facilitate future enhancements, I created interfaces and abstractions that allow for easy extension. 
 For example, the CsvTransportationChunkExtractor should be implemented to handle the chunk-based processing of the CSV file.
 
 # Approach to handle large files
-Since it is not feasible to store all transportation records in RAM,\
-the application should process the file in chunks. Each chunk should be loaded, sorted\
-individually, and then merged into a single sorted file to eliminate duplicates.\
+Since it is not feasible to store all transportation records in RAM,
+the application should process the file in chunks. Each chunk should be loaded, sorted
+individually, and then merged into a single sorted file to eliminate duplicates.
 Once the merged file is prepared, the application can extract and process the data chunk by chunk.
 
 # Results
