@@ -9,7 +9,8 @@ Test task for DevelopsToday
    ```
 3. Ensure you have the required .NET SDK
 4. Set up the SQL Server database by running the script.sql
-5. Run
+5. Modify the Connection String
+6. Run
    ```
    dotnet run
    ```
